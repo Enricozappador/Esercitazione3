@@ -1,33 +1,67 @@
 package didattica;
 
 public class Corso {
+	
+	//creo le parti base 
+	
+	private String codice; 
+	private String nome; 
+	private int numeroOre; 
+	private int numeroSquadre; 
+	private String periodo;
+	private String corsoDiLaurea;
+	int codice_docente; 
+	
+// returno le parti (ho già i getter e non mi servono setter) 
+	
+	
 
 	public String getCodice() {
-		return null;
+		return codice;
 	}
 
+	public Corso(String codice, String nome, int numeroOre, int numeroSquadre, String periodo, String corsoDiLaurea) {
+	this.codice = codice;
+	this.nome = nome;
+	this.numeroOre = numeroOre;
+	this.numeroSquadre = numeroSquadre;
+	this.periodo = periodo;
+	this.corsoDiLaurea = corsoDiLaurea;
+	codice_docente= 0; 
+}
+
 	public String getNome() {
-		return null;
+		return nome;
 	}
 
 	public int getNumeroOre() {
-		return -1;
+		return numeroOre;
 	}
 
 	public int getNumeroSquadre() {
-		return -1;
+		return numeroSquadre;
 	}
 
 	public String getPeriodo() {
-		return null;
+		return periodo;
 	}
 
 	public String getCorsoDiLaurea() {
-		return null;
+		return corsoDiLaurea;
 	}
 
 	public String descriviti() {
-		return null;
+		return codice+" "+nome+" "+numeroOre+" "+numeroSquadre+" "+periodo+" "+corsoDiLaurea;
+	}
+
+	public void setCodiceDocente(int codiceDocente) {
+		this.codice_docente= codiceDocente; 
+		
+	}
+
+	public int getCodiceDocente() {
+		// TODO Auto-generated method stub
+		return codice_docente;
 	}
 
 }
