@@ -11,6 +11,7 @@ public class Corso {
 	private String periodo;
 	private String corsoDiLaurea;
 	int codice_docente; 
+	private Docente docenti[];
 	
 // returno le parti (ho già i getter e non mi servono setter) 
 	
@@ -28,6 +29,7 @@ public class Corso {
 	this.periodo = periodo;
 	this.corsoDiLaurea = corsoDiLaurea;
 	codice_docente= 0; 
+	docenti = new Docente [5];
 }
 
 	public String getNome() {
@@ -62,6 +64,11 @@ public class Corso {
 	public int getCodiceDocente() {
 		// TODO Auto-generated method stub
 		return codice_docente;
+	}
+
+	public Docente titolare() {
+		// TODO Auto-generated method stub
+		return docenti[0];
 	}
 
 }

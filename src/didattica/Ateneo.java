@@ -124,7 +124,14 @@ public class Ateneo {
 	
 	public Docente titolare(String codiceCorso) {
 		
-		return null;
+		Corso tempCorso = cercaCorso(codiceCorso); 
+		
+		if(tempCorso == null) {
+			return null; 
+		}
+		else
+		
+		return tempCorso.titolare();
 	}
 
 	public String corsiDocente(int codiceDocente) {
