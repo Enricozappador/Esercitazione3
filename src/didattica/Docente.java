@@ -51,7 +51,7 @@ public class Docente {
 		this.codice_corso = codice_corso;
 	}
 	public String descriviti() {
-		return codiceDoc+" "+cognomeDoc+" "+nomeDoc+" "+ruoloDoc+" "+cod_corso;
+		return codiceDoc+" "+cognomeDoc+" "+nomeDoc+" "+ruoloDoc;
 	}
 	public void assegnaCorso(Corso c) {
 		if(numCorso<5) {

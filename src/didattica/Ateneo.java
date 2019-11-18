@@ -77,7 +77,7 @@ public class Ateneo {
 		Corso tempCorso[] = new Corso [count]; 
 		
 		for (k=0; k<count ; k++) {
-			if( corsi [k].getNome().contains(daCercare) || corsi[k].getCorsoDiLaurea().contains(daCercare)) {
+			if(corsi!=null && (corsi [k].getNome().toUpperCase().contains(daCercare.toUpperCase()) || corsi[k].getCorsoDiLaurea().toUpperCase().contains(daCercare.toUpperCase()))) {
 				tempCorso[k]= corsi [k]; 
 				return tempCorso;
 			}
